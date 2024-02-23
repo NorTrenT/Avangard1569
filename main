@@ -1,0 +1,15 @@
+# Программа для вычисления факториала числа
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+if __name__ == "__main__":
+    try:
+        num = int(input("Введите целое число: "))
+        result = factorial(num)
+        print(f"Факториал числа {num} равен {result}")
+    except ValueError:
+        print("Ошибка! Введите целое число.")
